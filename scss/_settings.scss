@@ -9,9 +9,12 @@ ul {
     list-style: none;
 }
 body {
-    font-family: 'Poppins-Regular', sans-serif;
-    font-weight: 400;
+    font-family: 'Poppins-Medium', sans-serif;
+    font-weight: 500;
     font-style: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #544837;
 }
 .container {
     max-width: 1144px;
@@ -31,9 +34,11 @@ body {
             }
         }
         &-link {
-            color: #2F281E;
+            font-family: 'Poppins-Regular', sans-serif;
+            font-weight: 400;
             font-size: 14px;
             line-height: 28px;
+            color: #2F281E;
         }
     }
 }
@@ -57,9 +62,30 @@ body {
         }
     }
     &__sign-up {
-        background: #FF9900;
+        background-color: #FF9900;
         border: 1px solid #FF9900;
         border-radius: 4px;
         color: #FFFFFF;
+    }
+}
+.title {
+    font-family: 'Poppins-Bold', sans-serif;
+    font-weight: 700;
+    color: #2F281E;
+}
+.button {
+    display: inline-block;
+    font-family: 'Poppins-Bold', sans-serif;
+    font-weight: 700;
+    background-color: #FF9900;
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 24px;
+    border: 1px solid #FF9900;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all .5s;
+    &:hover {
+        border: 1px solid #000;
     }
 }
