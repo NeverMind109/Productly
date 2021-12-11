@@ -21,6 +21,11 @@ body {
     padding: 0 10px;
     margin: 0 auto;
 }
+.title {
+    font-family: 'Poppins-Bold', sans-serif;
+    font-weight: 700;
+    color: #2F281E;
+}
 .menu {
     margin-left: auto;
     &__list {
@@ -67,11 +72,6 @@ body {
         border-radius: 4px;
         color: #FFFFFF;
     }
-}
-.title {
-    font-family: 'Poppins-Bold', sans-serif;
-    font-weight: 700;
-    color: #2F281E;
 }
 .button {
     display: inline-block;
