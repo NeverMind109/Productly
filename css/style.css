@@ -43,6 +43,34 @@ body {
       font-size: 14px;
       line-height: 28px;
       color: #2F281E; }
+  .menu__btn {
+    display: none;
+    width: 40px;
+    height: 40px; }
+    .menu__btn span {
+      display: block;
+      position: absolute;
+      top: 19px;
+      left: 0;
+      height: 2px;
+      width: 100%;
+      background-color: #000; }
+    .menu__btn::after {
+      content: '';
+      position: absolute;
+      width: 40px;
+      height: 2px;
+      background-color: #000;
+      left: 0;
+      top: 0; }
+    .menu__btn::before {
+      content: '';
+      position: absolute;
+      width: 40px;
+      height: 2px;
+      background-color: #000;
+      left: 0;
+      bottom: 0; }
 
 .user-nav {
   margin: 0 13px 0 52px; }
@@ -453,5 +481,161 @@ body {
   .footer__form-button {
     display: block;
     padding: 8px 16px; }
+
+@media (max-width: 1240px) {
+  .team__item--4 {
+    left: 275px; } }
+@media (max-width: 1174px) {
+  .slider {
+    margin: 0; }
+    .slider__item-img {
+      max-width: 100%;
+      height: 250px; } }
+@media (max-width: 1040px) {
+  .team__item--5 {
+    bottom: 100px; } }
+@media (max-width: 992px) {
+  .header__inner {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: auto;
+    padding-top: 25px; }
+
+  .menu {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 100%; }
+    .menu__list {
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+      padding-top: 30px; }
+
+  .top__inner {
+    background: none; }
+
+  .tools__items {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .tools__item {
+    width: 47%;
+    margin-bottom: 30px; }
+
+  .direction__item-image {
+    width: 40%; } }
+@media (max-width: 860px) {
+  .direction__item {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .direction__item-content {
+      max-width: 100%; }
+    .direction__item-image {
+      -webkit-box-ordinal-group: 0;
+          -ms-flex-order: -1;
+              order: -1;
+      width: 80%;
+      margin: 0 auto 30px; }
+
+  .team__inner {
+    padding: 80px 0; }
+  .team__item {
+    display: none; }
+
+  .footer__inner {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .footer__form {
+    width: 100%;
+    margin-top: 25px; } }
+@media (max-width: 768px) {
+  .top__inner {
+    padding: 80px 0 60px; }
+
+  .tools {
+    padding-top: 80px; }
+    .tools__inner {
+      padding-bottom: 60px; }
+
+  .slider__item-img {
+    width: 100%; }
+
+  .direction {
+    padding: 80px 0 57px; }
+
+  .blog {
+    padding: 80px 0 60px; } }
+@media (max-width: 524px) {
+  .header__inner {
+    display: block; }
+
+  .menu__list {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    text-align: center;
+    -webkit-transform: translateY(-300%);
+            transform: translateY(-300%);
+    -webkit-transition: all .2s;
+    transition: all .2s; }
+    .menu__list-item:not(:last-child) {
+      margin-right: 0; }
+    .menu__list-link {
+      display: block;
+      padding: 10px 0; }
+    .menu__list--active {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-transition: all .2s;
+      transition: all .2s; }
+  .menu__btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    top: 10px;
+    right: 10px; }
+
+  .user-nav {
+    margin: 0;
+    text-align: center;
+    padding-top: 30px; }
+
+  .top__title {
+    font-size: 28px;
+    line-height: 32px; }
+  .top__btn {
+    margin-right: 0;
+    margin-bottom: 25px; }
+
+  .tools__title {
+    font-size: 24px;
+    line-height: 30px; }
+  .tools__item {
+    width: 100%; }
+
+  .direction__item {
+    margin-bottom: 40px; }
+    .direction__item-title {
+      font-size: 24px;
+      line-height: 30px; }
+
+  .team__title {
+    font-size: 24px;
+    line-height: 30px; }
+
+  .blog__title {
+    font-size: 24px;
+    line-height: 30px; }
+
+  .footer .logo {
+    width: 100%;
+    margin-bottom: 25px; }
+
+  .footer__inner {
+    -ms-flex-pack: distribute;
+        justify-content: space-around; } }
 
 /*# sourceMappingURL=style.css.map */
